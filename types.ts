@@ -16,4 +16,5 @@ export interface APODItem {
   export interface MainPageContentProps {
     data: APODItem[];
     loading: boolean;
+
   }

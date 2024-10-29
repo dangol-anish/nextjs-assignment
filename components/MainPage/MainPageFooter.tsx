@@ -6,11 +6,8 @@ import Mail from "../../public/mail.svg";
 import {
   Pagination,
   PaginationContent,
-  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
 } from "@/components/ui/pagination";
 
 const MainPageFooter = () => {

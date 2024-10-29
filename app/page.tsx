@@ -9,6 +9,7 @@ export default function Home() {
   const [data, setData] = useState<APODItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  
 
   useEffect(() => {
     const fetchData = async () => {
