@@ -9,7 +9,7 @@ const MainPageHeader = () => {
     <div className="h-[10%] w-full flex justify-between text-white/70">
       <Tabs
         defaultValue="images"
-        className="w-[35%] lg:w-[25%] h-[60%] bg-default_state border rounded-md  border-border_color"
+        className="w-[45%] lg:w-[25%] h-[60%] bg-default_state border rounded-md  border-border_color"
       >
         <TabsList className=" w-full  bg-default_state text-white/70  flex gap-2 justify-center items-center h-full ">
           <TabsTrigger value="images" className="hover:bg-hover_state ">

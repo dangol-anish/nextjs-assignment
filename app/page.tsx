@@ -1,3 +1,4 @@
+import MainPageFooter from "@/components/MainPageFooter";
 import MainPageHeader from "@/components/MainPageHeader"
 
 export default function Home() {
@@ -16,10 +17,7 @@ export default function Home() {
       <div className="bg-white h-32 md:h-full"></div>
       <div className="bg-white h-32 md:h-full"></div>
     </div>
-    <div className="bg-yellow-300 h-[10%] w-full flex justify-between items-end">
-      <div className='bg-red-500 w-[40%] h-[50%]  rounded-md'></div>
-      <div className='bg-red-500 w-[30%] h-[50%]  rounded-md'></div>
-    </div>
+    <MainPageFooter/>
   </div>
     </>
   );
