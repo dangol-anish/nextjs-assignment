@@ -3,6 +3,7 @@ import React, { Suspense } from "react";
 import DetailsContent from "@/components/DetailsPage/DetailsContent";
 import DetailsHeader from "@/components/DetailsPage/DetailsHeader";
 import { useSearchParams } from "next/navigation";
+import DetailsPageSkeleton from "@/components/MainPage/Skeleton";
 
 function DetailsComponent() {
   const searchParams = useSearchParams();
@@ -32,7 +33,7 @@ function DetailsComponent() {
 
 export default function Details() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<DetailsPageSkeleton/>}>
       <DetailsComponent />
     </Suspense>
   );
