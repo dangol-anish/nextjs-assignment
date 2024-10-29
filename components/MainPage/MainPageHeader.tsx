@@ -1,7 +1,7 @@
 "use client";
 import { Input } from "@/components/ui/input";
-import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
-import SearchIcon from "../public/search-icon.svg";
+import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
+import SearchIcon from "../../public/search-icon.svg";
 import Image from "next/image";
 
 const MainPageHeader = () => {

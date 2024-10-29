@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import Portfolio from "../public/portfolio.svg";
-import Github from "../public/github.svg";
-import Mail from "../public/mail.svg";
+import Portfolio from "../../public/portfolio.svg";
+import Github from "../../public/github.svg";
+import Mail from "../../public/mail.svg";
 import {
   Pagination,
   PaginationContent,

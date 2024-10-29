@@ -1,6 +1,6 @@
-import MainPageContent from "@/components/MainPageContent";
-import MainPageFooter from "@/components/MainPageFooter";
-import MainPageHeader from "@/components/MainPageHeader"
+import MainPageContent from "@/components/MainPage/MainPageContent";
+import MainPageFooter from "@/components/MainPage/MainPageFooter";
+import MainPageHeader from "@/components/MainPage/MainPageHeader"
 
 export default function Home() {
   return (
