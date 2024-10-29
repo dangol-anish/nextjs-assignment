@@ -1,4 +1,4 @@
-# Next.js Assignment
+# NASA's Astronomy Highlight - Next.js Assignment
 
 ## Description
 This project is a Next.js application created to demonstrate a simple web application setup using TypeScript and Tailwind CSS. It fetches and displays data from NASA's Astronomy Picture of the Day (APOD) API.
