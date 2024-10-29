@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#Next.js Assignment
 
-## Getting Started
+##Description
+This project is a Next.js application created to demonstrate a simple web application setup using TypeScript and Tailwind CSS. It fetches and displays data from NASA's Astronomy Picture of the Day (APOD) API.
 
-First, run the development server:
-
-```bash
+##Getting Started
+Prerequisites
+Node.js (v14.x or higher)
+npm, Yarn, or any other package manager of your choice
+Installation
+Clone the repository:
+```
+bash
+Copy code
+git clone https://github.com/dangol-anish/nextjs-assignment.git
+cd nextjs-assignment
+Install the dependencies:
+```
+bash
+Copy code
+npm install
+# or
+yarn install
+Running the Development Server
+To start the development server, run:
+```
+bash
+Copy code
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open your browser and navigate to http://localhost:3000 to see the application in action.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##Features
+Optimized loading with next/font
+Tailwind CSS & shadcn/ui for styling
+NASA's APOD API
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+##API Documentation
+The application uses the NASA Astronomy Picture of the Day (APOD) API. You can find the API documentation <a href="https://api.nasa.gov/">here</a>.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+###Endpoints
+GET /apod - Retrieves the Astronomy Picture of the Day.
+You will need to sign up for an API key at the NASA API site.
 
-## Learn More
+##Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-To learn more about Next.js, take a look at the following resources:
+##License
+This project is licensed under the MIT License. See the <a href="https://github.com/dangol-anish/nextjs-assignment/blob/main/LICENSE">LICENSE</a> file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+##Contact
+For any inquiries, please reach out via <a href="https://github.com/dangol-anish">Github</a>, <a href="https://www.linkedin.com/in/dangol-anish/">LinkedIn</a>, or my <a href="https://www.dangolanish.com.np/">Website</a>
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
