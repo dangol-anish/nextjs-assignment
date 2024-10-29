@@ -1,12 +1,19 @@
 "use client";
-import { Input } from "@/components/ui/input";
+
 import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
-import SearchIcon from "../../public/search-icon.svg";
-import Image from "next/image";
+import { Montserrat } from 'next/font/google'
+
+
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 const MainPageHeader = () => {
   return (
-    <div className="h-[10%] w-full flex justify-center text-white/70">
+    <div className="h-[10%] w-full flex justify-between text-white/70">
+      <div className="flex h-[60%]">
+        <p className={`${montserrat.className} flex justify-center items-center text-white`}>
+          NASA&apos;s Astronomy Highlight
+        </p>
+      </div>
       <Tabs
         defaultValue="images"
         className="w-[45%] lg:w-[25%] h-[60%] bg-default_state border rounded-md  border-border_color"
@@ -20,8 +27,6 @@ const MainPageHeader = () => {
           </TabsTrigger>
         </TabsList>
       </Tabs>
-
-     
     </div>
   );
 };
