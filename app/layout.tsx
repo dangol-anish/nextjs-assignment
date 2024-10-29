@@ -29,8 +29,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background_color h-[100vh] w-[100vw]`}
       >
         <main className="h-full w-full flex flex-col relative">
-          <div className="circle h-[50vh] w-[50vw] absolute top- left-20 z-0"></div>
-          <div className="circle h-[50vh] w-[50vw] absolute bottom-0 right-20 z-0 "></div>
           <section className="z-10 flex items-center justify-center h-full w-full relative ">
             {children}
             </section>

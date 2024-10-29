@@ -11,8 +11,14 @@ const config: Config = {
   	extend: {
   		colors: {
 			// Defined Colors 
-			
+
 			background_color: "#000000",
+			default_state: "#1a1b1a",
+			hover_state: "#2d2d2d",
+			active_state: "#292828",
+			border_color: "#2d2d2d",
+			border_active: "#494849",
+
 
 
 
