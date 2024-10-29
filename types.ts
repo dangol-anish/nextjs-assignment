@@ -16,5 +16,11 @@ export interface APODItem {
   export interface MainPageContentProps {
     data: APODItem[];
     loading: boolean;
+    currentPage: number;
+    itemsPerPage: number;
+  }
 
+  export interface MainPageFooterProps {
+    currentPage: number;
+    onPageChange: (page: number) => void;
   }

@@ -9,8 +9,9 @@ import {
   PaginationItem,
   PaginationLink,
 } from "@/components/ui/pagination";
+import { MainPageFooterProps } from "@/types";
 
-const MainPageFooter = () => {
+const MainPageFooter: React.FC<MainPageFooterProps> = ({ currentPage, onPageChange }) => {
   return (
     <div className=" h-[10%] w-full flex justify-between items-end text-white/70">
       <div className="w-[60%] h-[50%]  rounded-md text-xs flex items-center justify-start">
@@ -28,17 +29,20 @@ const MainPageFooter = () => {
         </div>
       </div>
 
-      <Pagination className="w-[30%] lg:w-[20%] h-[50%]  rounded-md m-0 flex justify-center items-center  bg-default_state border border-border_color">
+      <Pagination className="w-[40%] lg:w-[25%] h-[50%] rounded-md m-0 flex justify-center items-center bg-default_state border border-border_color">
         <PaginationContent>
-          <PaginationItem>
-            <PaginationLink className="text-xs h-6 w-3 hover:bg-hover_state hover:text-white" href="#">1</PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink className="text-xs h-6 w-3 hover:bg-hover_state hover:text-white" href="#">2</PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink className="text-xs h-6 w-3 hover:bg-hover_state hover:text-white"  href="#">3</PaginationLink>
-          </PaginationItem>
+          {[1, 2, 3, 4].map((page) => (
+            <PaginationItem key={page}>
+              <PaginationLink
+                className={`cursor-pointer text-xs h-6 w-3 ${
+                  page === currentPage ? "bg-hover_state text-white" : ""
+                } hover:bg-hover_state hover:text-white`}
+                onClick={() => onPageChange(page)}
+              >
+                {page}
+              </PaginationLink>
+            </PaginationItem>
+          ))}
         </PaginationContent>
       </Pagination>
     </div>

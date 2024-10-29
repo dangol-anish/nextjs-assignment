@@ -9,6 +9,11 @@ export default function Home() {
   const [data, setData] = useState<APODItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
+
+  const handlePageChange = (page: number) => setCurrentPage(page);
+
   
 
   useEffect(() => {
@@ -37,8 +42,9 @@ export default function Home() {
       <div className="h-[95%] md:h-[90%] w-[90%] md:w-[60%] lg:w-[45%]">
         <MainPageHeader />
         {error && <div className="error text-white w-full h-[80%] ">Error: {error}</div>} 
-        {!error && <MainPageContent data={data} loading={loading} />} 
-        <MainPageFooter />
+        {!error && <MainPageContent data={data} loading={loading}  currentPage={currentPage}
+        itemsPerPage={itemsPerPage} />} 
+        <MainPageFooter currentPage={currentPage} onPageChange={handlePageChange} />
       </div>
     </>
   );
