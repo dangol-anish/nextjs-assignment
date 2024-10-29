@@ -14,7 +14,7 @@ import { MainPageFooterProps } from "@/types";
 const MainPageFooter: React.FC<MainPageFooterProps> = ({ currentPage, onPageChange }) => {
   return (
     <div className=" h-[10%] w-full flex justify-between items-end text-white/70">
-      <div className="w-[60%] h-[50%]  rounded-md text-xs flex items-center justify-start">
+      <div className="w-[50%] h-[50%]  rounded-md text-xs flex items-center justify-start">
         <p className="w-[60%]">Take home assignment by Anish Dangol</p>
         <div className="flex gap-2">
           <Link target="_blank" href="https://www.dangolanish.com.np/">
