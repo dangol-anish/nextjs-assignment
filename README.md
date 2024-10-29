@@ -12,16 +12,16 @@ Clone the repository:
 ```
 git clone https://github.com/dangol-anish/nextjs-assignment.git
 cd nextjs-assignment
+```
 Install the dependencies:
 ```
 npm install
 # or
 yarn install
+```
 Running the Development Server
 To start the development server, run:
 ```
-bash
-Copy code
 npm run dev
 # or
 yarn dev
