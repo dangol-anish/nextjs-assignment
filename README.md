@@ -10,14 +10,10 @@ npm, Yarn, or any other package manager of your choice
 Installation
 Clone the repository:
 ```
-bash
-Copy code
 git clone https://github.com/dangol-anish/nextjs-assignment.git
 cd nextjs-assignment
 Install the dependencies:
 ```
-bash
-Copy code
 npm install
 # or
 yarn install
