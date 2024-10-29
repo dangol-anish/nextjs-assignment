@@ -3,7 +3,7 @@ import React from "react";
 
 const MainPageContent = () => {
   return (
-    <div className=" w-full h-[80%] grid grid-cols-1 md:grid-cols-3 gap-3 overflow-y-auto">
+    <div className=" w-full h-[80%] grid grid-cols-1 md:grid-cols-3 gap-3 overflow-y-auto no-scrollbar">
      <Link
   href="/details"
   className="relative h-32 md:h-full bg-default_state text-white rounded-2xl overflow-hidden shadow-lg hover:opacity-80"
