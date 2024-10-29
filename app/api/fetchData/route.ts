@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 
 // main page api fetch
-export async function GET(detailsTitle: string) {
+export async function GET() {
   try {
     const response = await fetch(
       `https://api.nasa.gov/planetary/apod?api_key=${process.env.NASA_API_KEY}&count=27`

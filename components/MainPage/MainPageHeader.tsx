@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const MainPageHeader = () => {
   return (
-    <div className="h-[10%] w-full flex justify-between text-white/70">
+    <div className="h-[10%] w-full flex justify-center text-white/70">
       <Tabs
         defaultValue="images"
         className="w-[45%] lg:w-[25%] h-[60%] bg-default_state border rounded-md  border-border_color"
@@ -21,18 +21,7 @@ const MainPageHeader = () => {
         </TabsList>
       </Tabs>
 
-      <div className="relative w-[40%] h-[60%]">
-        <Image
-          src={SearchIcon}
-          alt="search-icon"
-          className="absolute left-3 top-1/2 transform -translate-y-1/2 "
-        />
-        <Input
-          type="text"
-          placeholder="Search"
-          className="pl-10 w-full h-full"
-        />
-      </div>
+     
     </div>
   );
 };
