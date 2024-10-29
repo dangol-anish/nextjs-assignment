@@ -1,4 +1,4 @@
-export const Skeleton = () => {
+export const MainPageSkeleton = () => {
     return (
       <div
         className="relative h-32 md:h-full bg-default_state animate-pulse rounded-2xl overflow-hidden shadow-lg "

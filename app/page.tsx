@@ -15,7 +15,7 @@ export default function Home() {
       setLoading(true);
       setError(null); 
       try {
-        const res = await fetch('./api/fetchApod');
+        const res = await fetch('./api/fetchData');
         if (!res.ok) {
           throw new Error('Network response was not ok');
         }
@@ -35,7 +35,7 @@ export default function Home() {
     <>
       <div className="h-[95%] md:h-[90%] w-[90%] md:w-[60%] lg:w-[45%]">
         <MainPageHeader />
-        {error && <div className="error">{error}</div>} 
+        {error && <div className="error text-white w-full h-[80%] ">Error: {error}</div>} 
         {!error && <MainPageContent data={data} loading={loading} />} 
         <MainPageFooter />
       </div>

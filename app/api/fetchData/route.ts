@@ -1,7 +1,8 @@
-// src/app/api/fetchApod/route.ts
 import { NextResponse } from 'next/server';
 
-export async function GET() {
+
+// main page api fetch
+export async function GET(detailsTitle: string) {
   try {
     const response = await fetch(
       `https://api.nasa.gov/planetary/apod?api_key=${process.env.NASA_API_KEY}&count=27`
@@ -17,3 +18,5 @@ export async function GET() {
     return NextResponse.error();
   }
 }
+
+

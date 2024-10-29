@@ -1,18 +1,18 @@
 import Link from "next/link";
 import React from "react";
 import { APODItem, MainPageContentProps } from "@/types"; 
-import { Skeleton } from "./Skeleton";
+import { MainPageSkeleton } from "./Skeleton";
 
 const MainPageContent: React.FC<MainPageContentProps> = ({ data, loading }) => {
   
   return (
     <div className="w-full h-[80%] grid grid-cols-1 md:grid-cols-3 gap-3 overflow-y-auto no-scrollbar">
       {loading
-        ? Array.from({ length: 9 }).map((_, index) => <Skeleton key={index} />)
+        ? Array.from({ length: 9 }).map((_, index) => <MainPageSkeleton key={index} />)
         : data.slice(0, 9).map((item: APODItem, index: number) => (
             <Link
               key={index}
-              href="/details"
+              href={`/details?title=${encodeURIComponent(item.title)}&explanation=${encodeURIComponent(item.explanation)}&url=${encodeURIComponent(item.url)}&hdurl=${encodeURIComponent(item.hdurl)}&date=${encodeURIComponent(item.date)}`}
               className="relative h-32 md:h-full bg-default_state text-white rounded-2xl overflow-hidden shadow-lg hover:opacity-80"
             >
               <img
