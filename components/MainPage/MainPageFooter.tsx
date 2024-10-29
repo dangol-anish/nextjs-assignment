@@ -29,7 +29,7 @@ const MainPageFooter: React.FC<MainPageFooterProps> = ({ currentPage, onPageChan
         </div>
       </div>
 
-      <Pagination className="w-[40%] lg:w-[25%] h-[50%] rounded-md m-0 flex justify-center items-center bg-default_state border border-border_color">
+      <Pagination className="w-[45%] lg:w-[25%] h-[50%] rounded-md m-0 flex justify-center items-center bg-default_state border border-border_color">
         <PaginationContent>
           {[1, 2, 3, 4].map((page) => (
             <PaginationItem key={page}>
